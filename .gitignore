@@ -1,1 +1,9 @@
+# Default Jekyll excludes
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Exclude certificates
 *.pem
