@@ -28,7 +28,7 @@ twitter_username: EchteDanny
 github_username:  DannyvdSluijs
 
 # Build settings
-theme: minima
+remote_theme: piharpi/jekyll-klise
 plugins:
   - jekyll-feed
 
