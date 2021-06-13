@@ -28,7 +28,7 @@ twitter_username: EchteDanny
 github_username:  DannyvdSluijs
 
 # Build settings
-remote_theme: piharpi/jekyll-klise
+remote_theme: ifedyukin/Mekyll
 plugins:
   - jekyll-feed
 
