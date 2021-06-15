@@ -2,8 +2,8 @@
 title:               Yet another blog
 tagline:             'a place for my scribbles'
 description:         ''
-url:                 https://www.dannyvandersluijs.nl
-baseurl:             '/blog'
+url:                 https://blog.dannyvandersluijs.nl
+baseurl:             '/'
 paginate:            5
 permalink:           pretty
 
