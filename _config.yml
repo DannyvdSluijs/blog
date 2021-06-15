@@ -1,1 +1,21 @@
-theme: jekyll-theme-midnight
+# Setup
+title:               Yet another blog
+tagline:             'a place for my scribbles'
+description:         ''
+url:                 https://blog.dannyvandersluijs.nl
+baseurl:             '/'
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Danny van der Sluijs
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
