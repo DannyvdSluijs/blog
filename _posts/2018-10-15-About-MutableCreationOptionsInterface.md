@@ -1,9 +1,9 @@
 ---
 title: About MutableCreationOptionsInterface
 date: 2018-10-15 20:34:59
+layout: post
 tags:
 ---
-# About MutableCreationOptionsInterface
 Recently I got a bit stuck when I started to implement some basic input filters which would save a lot of boiler plate code in our REST API. Continuously we were injecting the entity access services into our REST API resources. Where some resources would offer an entity having over more than five relations to other entities. 
 
 This led me down the path to start looking into alternatives approaches and how to increase the reusability of the code base. Quite quickly the path of implementing custom filters that would transform a numerical identifier into an entity using the access layer seemed a logical approach. Validation of the item could be resolved with a [InstanceOf](https://github.com/zendframework/zend-validator/blob/master/src/IsInstanceOf.php) validator to check the object type to be of the correct type. Using this approach would offer the referenced object as part of the request validation and resulting in a slimmer resource controller as we would no longer get the entity using the access layer in the controller.

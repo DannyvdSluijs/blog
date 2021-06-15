@@ -1,9 +1,9 @@
 ---
 title: Applying Decorator Pattern In ZendFramework
 date: 2017-11-08 21:32:38
+layout: post
 tags:
 ---
-# Applying Decorator Pattern In ZendFramework
 A big refactoring job at my workplace has led me to review some of the [ViewHelpers](https://docs.zendframework.com/zend-view/helpers/intro/) we are having in one of our core applications.
 These helpers where targetting different types of properties resulting in the use of several view helpers for a 
 single view and the same view helper being used by multiple (unrelated) views. This results in a high coupling whereas we would like a lower coupling.
@@ -19,8 +19,8 @@ use Zend\View\Helper\AbstractHelper;
 
 class UserDecorator extends AbstractHelper
 {
-	/** @var User */
-	private $user;
+    /** @var User */
+    private $user;
 
     /**
      * Clone the user decorator with the provided user
@@ -41,7 +41,11 @@ class UserDecorator extends AbstractHelper
      */
     public function getFullName()
     {
-        return sprintf('%s %s', $this->user->getFirstName(), $this->user->getLastName());
+        return sprintf(
+            '%s %s',
+            $this->user->getFirstName(),
+            $this->user->getLastName()
+        );
     }
 }
 ```
@@ -59,6 +63,7 @@ return [
       'userDecorator' => Helper\UserDecorator::class
     ]	
   ]
+];
 ```
 
 Using it in the view is rather simple:

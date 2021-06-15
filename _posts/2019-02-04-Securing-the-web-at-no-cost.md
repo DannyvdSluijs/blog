@@ -1,9 +1,9 @@
 ---
 title: 'Securing the web at no cost'
 date: 2019-02-04 21:20:27
+layout: post
 tags:
 ---
-# Securing the web at no cost
 For work stuff some time ago, I've been working on the SSL setup which has triggered me to see if I could start securing my personal website. Because obviously I'm a very hacker rich target ;-). But since I don't make any money from that, why should I even spend a dime on a secure website. Well because you can do it for **FREE**. Even the time you'll need to invest is minimal. 
 
 _Disclaimer: This post works on the assumption you're having root access to your server and it runs a Ubuntu 18.04 with Apache setup_
